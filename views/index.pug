@@ -2,7 +2,7 @@ extends layout
 
 block content
   h1 Enter Your Words
-  form(mthod = "POST" action="/story" id="words")
+  form(method = "POST" action="/story" id="words")
     label(for="noun1") Noun:
     input(type="text" name ="noun1" id="noun1")
     br
@@ -11,10 +11,10 @@ block content
     br
     label(for="adjective1") Adjective:
     input(type="text" name ="adjective1" id="adjective1")
-    label(form"storyChoice") Choose One
-    select(form="words" name="storyChoice" id="storyChoice")
-    option(value ="1") Story 1
-    option(value ="2") Story 2
-    option(value ="3") Story 3
+  label(for ="storyChoice") Choose One
+  select(form ="words" name="storyChoice" id="storyChoice")
+    option(value = "1") Story 1
+    option(value = "2") Story 2
+    option(value = "3") Story 3
   br
   button(type="submit" form="words") Tell Me a Story
