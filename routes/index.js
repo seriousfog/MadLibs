@@ -26,8 +26,8 @@ function getStory(formData) {
     return generateStory2(formData);
   } else if (formData.storyChoice === "3") {
     return generateStory3(formData);
-  } else if (formData.storyChoice === "4") {
-    return generateStory4(formData);
+  } else if (formData.storyChoice === "Random") {
+    return randomStory(formData);
   } else {
     return "invalid";
   }
@@ -61,4 +61,16 @@ function generateRandomHexCode() {
     hexCode += (Math.round(Math.random() * 15)).toString(16)
   }
   return hexCode
+}
+
+function randomStory(formData){
+  let answers = [1, 2, 3];
+  let choice = Math.floor(Math.random()*answers.length);
+  if (choice === 1) {
+    return generateStory1(formData)
+  } else if (choice === 2) {
+    return generateStory2(formData)
+  } else {
+    return generateStory3(formData)
+  }
 }
