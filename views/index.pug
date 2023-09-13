@@ -4,19 +4,19 @@ block content
   h1 Enter Your Words
   form(method = "POST" action="/story" id="words")
     label(for="noun1") Noun:
-    input(type="text" name ="noun1" id="noun1")
+    input(type="text" name ="noun1" id="noun1" value="dog")
     br
     label(for="verb1") Verb:
-    input(type="text" name ="verb1" id="verb1")
+    input(type="text" name ="verb1" id="verb1" value="sputter")
     br
     label(for="verb2") Second Verb (-ing):
-    input(type="text" name ="verb2" id="verb2")
+    input(type="text" name ="verb2" id="verb2" value="burning")
     br
     label(for="adjective1") Adjective:
-    input(type="text" name ="adjective1" id="adjective1")
+    input(type="text" name ="adjective1" id="adjective1" value="cool")
     br
     label(for="name1") Name:
-    input(type="text" name ="name1" id="name1")
+    input(type="text" name ="name1" id="name1" value="John")
   label(for ="storyChoice") Choose One
   select(form ="words" name="storyChoice" id="storyChoice")
     option(value = "1") Story 1

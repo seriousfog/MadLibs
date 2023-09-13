@@ -43,7 +43,7 @@ function generateStory1(formData) {
 function generateStory2(formData) {
   return `My friend ${formData.name1} had a very expensive ${formData.noun1} that costed over 100,000$.
   It was very ${formData.adjective1} and seemed like it might've been worth the price. ${formData.name1}'s 
-  ${formData.noun1} started to ${formData.verb1} was mostl likely broken after 24 hours of being bought.
+  ${formData.noun1} started to ${formData.verb1} was most likely broken after 24 hours of being bought.
   The ${formData.noun1} also was ${formData.verb2} which made me very uncomfortable.`
 }
 
