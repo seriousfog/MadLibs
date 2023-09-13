@@ -10,7 +10,9 @@ router.post( '/story', function(req, res){
   let body = req.body;
   let newStory = getStory(body);
   res.render ('story',{
-    newStory: newStory
+    newStory: newStory,
+    color: generateRandomHexCode(),
+    textColor: generateRandomHexCode(),
   });
 })
 
@@ -52,6 +54,11 @@ function generateStory3(formData) {
   alone in a corner, he somehow managed to escape by ${formData.verb2}. I was frustrated of how weak I was.`
 }
 
-function generateStory4 (formData) {
 
+function generateRandomHexCode() {
+  let hexCode = "#"
+  while (hexCode.length < 7) {
+    hexCode += (Math.round(Math.random() * 15)).toString(16)
+  }
+  return hexCode
 }
