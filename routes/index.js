@@ -13,7 +13,7 @@ router.post( '/story', function(req, res){
     newStory: newStory,
     color: generateRandomHexCode(),
     textColor: generateRandomHexCode(),
-  });
+  })
 })
 
 
